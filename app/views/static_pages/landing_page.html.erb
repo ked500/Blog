@@ -1,2 +1,13 @@
-<h1>StaticPages#landing_page</h1>
-<p>Find me in app/views/static_pages/landing_page.html.erb</p>
+<% if user_signed_in? %>
+  <h1>LandingPage</h1>
+<% else %>
+<div class="center jumbotron">
+  <h1>Welcome to the Blog App</h1>
+  <h2>
+    This is the home page for the App
+  </h2>
+  <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary"%>
+</div>
+  <%= image_tag("amogus.png", alt: "amogus") %>
+<% end %>
+
