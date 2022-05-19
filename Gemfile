@@ -72,6 +72,9 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'devise'
 gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
