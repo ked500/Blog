@@ -143,8 +143,8 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
+
 .stats {
-  overflow: auto;
   margin-top: 0;
   padding: 0;
   a {
@@ -164,6 +164,19 @@ aside {
   strong {
     display: block;
   }
+}
+
+.follow-button{
+  border: none;
+  background:none;
+}
+
+.fa-heart:hover{
+    color: #E34242 !important;
+}
+
+.fa-heart-crack:hover{
+  color: #E34242 !important;
 }
 
 .user_avatars {
