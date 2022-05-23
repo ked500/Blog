@@ -1,0 +1,4 @@
+active_admin_form_for [:admin, resource] do |f|
+  inputs :name, :email, :created_at, :confirmed_at
+  actions
+end
