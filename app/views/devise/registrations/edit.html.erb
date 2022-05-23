@@ -53,9 +53,13 @@
 </br>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= link_to "Delete my account", registration_path(resource_name), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
-                style: "float:left " %>
-    <%= link_to "Back", :back, style: "float:right" %>
+    <%= link_to registration_path(resource_name), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
+                style: "float:left " do %>
+      Delete account <i class="fa-regular fa-trash-can"></i>
+      <% end %>
+    <%= link_to :back, style: "float:right" do %>
+      <i class="fa-solid fa-arrow-left"></i>Back
+    <% end %>
   </div>
 </div>
 
