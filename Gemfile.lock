@@ -119,6 +119,8 @@ GEM
     importmap-rails (1.0.3)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
+    invisible_captcha (2.0.0)
+      rails (>= 5.0)
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
@@ -225,6 +227,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    rolify (6.0.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -288,6 +291,7 @@ DEPENDENCIES
   devise
   faker
   importmap-rails
+  invisible_captcha
   jbuilder
   omniauth-github
   omniauth-google-oauth2
@@ -295,6 +299,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)
+  rolify
   sassc-rails
   selenium-webdriver
   sprockets-rails

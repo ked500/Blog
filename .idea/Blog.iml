@@ -107,6 +107,7 @@
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.3.1, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v3.0.1, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, RVM: ruby-3.0.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rolify (v6.0.0, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, RVM: ruby-3.0.2) [gem]" level="application" />
@@ -140,6 +141,7 @@
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
         <option value="active_record:multi_db" />
+        <option value="active_record:rolify" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
@@ -161,6 +163,8 @@
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
+        <option value="rolify" />
+        <option value="rolify:user" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="scss:assets" />
@@ -180,6 +184,7 @@
         <option value="active_record:application_record" />
         <option value="active_record:devise" />
         <option value="active_record:multi_db" />
+        <option value="active_record:rolify" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
@@ -201,6 +206,8 @@
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
+        <option value="rolify" />
+        <option value="rolify:user" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="scss:assets" />

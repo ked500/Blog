@@ -27,7 +27,7 @@ followers = users[3..40]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
 
-user = User.order(:created_at).take(6)
+users = User.order(:created_at).take(6)
 
 50.times do
   content = Faker::Lorem.sentence(5)
