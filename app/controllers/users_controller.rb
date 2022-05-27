@@ -4,8 +4,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(page: params[:page])
+    if User.exists?(params[:id])
+      @user = User.find(params[:id])
+      @microposts = @user.microposts.paginate(page: params[:page])
+    else
+      flash[:danger] = "This user disappeared!"
+      redirect_to root_url
+    end
   end
 
   def following
