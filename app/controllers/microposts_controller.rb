@@ -20,6 +20,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else
+      flash[:alert] = @micropost.errors.full_messages.join(", ")
       @feed_items = []
       redirect_to root_url
     end
