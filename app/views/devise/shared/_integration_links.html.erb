@@ -3,11 +3,11 @@
     <%- resource_class.omniauth_providers.each do |provider| %>
       <div class="inner">
         <% if provider == :github %>
-          <%= button_to omniauth_authorize_path(resource_name, provider), method: :post, data: { turbo: false }, class: 'btn btn-success' do %>
+          <%= button_to omniauth_authorize_path(resource_name, provider), method: :post, data: { turbo: false }, class: 'btn btn-danger' do %>
             Sign in with GitHub <i class="fa-brands fa-github fa-xl"></i>
           <% end %>
         <% elsif :google %>
-          <%= button_to omniauth_authorize_path(resource_name, provider), method: :post, data: { turbo: false }, class: 'btn btn-danger' do %>
+          <%= button_to omniauth_authorize_path(resource_name, provider), method: :post, data: { turbo: false }, class: 'btn btn-success' do %>
             Sign in with Google <i class="fa-brands fa-google fa-xl"></i>
           <% end %>
         <% end %>
