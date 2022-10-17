@@ -13,7 +13,7 @@
       <%= link_to edit_micropost_path(micropost) do %>
         <i class="fa-solid fa-pencil"></i>
         <% end %>
-      <%= link_to micropost, data: { turbo_confirm: "You sure?", turbo_method: :get } do %>
+      <%= link_to micropost, data: { turbo_confirm: "You sure?", turbo_method: :delete } do %>
        <i class="fa-regular fa-trash-can"></i>
       <% end %>
       <% end %>
