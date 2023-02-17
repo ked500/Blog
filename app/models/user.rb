@@ -16,8 +16,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable, :confirmable, :lockable,
          :omniauthable, omniauth_providers: [:github, :google_oauth2]
-  after_create :assign_default_role
-
 
   def self.from_omniauth(access_token)
     user = User.where(email: access_token.info.email).first
@@ -46,11 +44,5 @@ class User < ApplicationRecord
   def feed
     following_ids = "SELECT followed_id FROM relationships WHERE follower_id = :user_id"
     Micropost.where("user_id IN (#{following_ids}) OR user_id = :user_id",user_id: id)
-  end
-
-  private
-
-  def assign_default_role
-    self.add_role(:default) if self.roles.blank?
   end
 end

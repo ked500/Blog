@@ -6,6 +6,10 @@ class MicropostsController < ApplicationController
   def edit
   end
 
+  def index
+    @microposts = Micropost.paginate(page: params[:page])
+  end
+
   def update
     if @micropost.update(micropost_params)
       redirect_to root_url, notice: "Post was successfully updated"

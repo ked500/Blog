@@ -11,8 +11,18 @@
       <div class="field">
         <%= f.label :password %>
         <%= link_to "(forgot password)", new_password_path(resource_name) %>
-        <%= f.password_field :password, autocomplete: "current-password", class: 'form-control' %>
       </div>
+      <div class="input-container" data-controller="password_toggle">
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", required: true %>
+        <i class="eyeicon">
+          <svg class="fa-solid fa-eye" data-action="click->password_toggle#password"/>
+        </i>
+      </div>
+
+
+
+      <% f.password_field :password, autocomplete: "current-password", class: 'form-control' %>
+
 
       <% if devise_mapping.rememberable? %>
         <%= f.label :remember_me, class: "checkbox inline" do %>
@@ -20,6 +30,8 @@
           <span>Remember me on this computer</span>
         <% end %>
       <% end %>
+
+
 
       <div class="actions">
         <%= f.submit "Log in", class: "btn btn-primary" %>

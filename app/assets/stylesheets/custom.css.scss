@@ -302,3 +302,31 @@ span.picture {
 {
   display: inline-block;
 }
+
+.input-container{
+  position: relative;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+input {
+  margin: 10px 0;
+}
+
+.input-container input{
+  padding: 6px 12px;
+}
+// Show pass icon
+
+i.eyeicon {
+  position: absolute;
+  right: 10px;
+}
+
+i:hover {
+  color: #9020A8;
+  cursor: pointer;
+}
+
+
