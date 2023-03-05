@@ -274,6 +274,14 @@ input {
     color: $gray-light;
     display: block;
     margin-left: 60px;
+    .micropost_like{
+      display: flex;
+      flex-direction: row;
+      float: right;
+      p {
+         font-size: 1.4em;
+      }
+    }
   }
   .gravatar {
     float: left;

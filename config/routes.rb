@@ -16,5 +16,7 @@ Rails.application.routes.draw do
     end
   end
   resources :relationships, only: [:create, :destroy]
-  resources :microposts
+  resources :microposts do
+    resources :likes, only: [:create,:destroy]
+  end
 end
