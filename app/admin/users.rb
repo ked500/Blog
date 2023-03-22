@@ -1,5 +1,5 @@
 ActiveAdmin.register User do
-  actions :all, :except => [:new]
+  actions :all, :except => [:new, :destroy]
 
   action_item :block, only: :show do
     link_to 'Block User', block_admin_user_path(resource), method: :put unless resource.banned

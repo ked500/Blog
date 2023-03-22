@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users, path: "" ,controllers: {
     omniauth_callbacks: 'users/omniauth_callbacks' ,
-    registrations: 'users/registrations',
-    sessions: 'users/sessions'
+    registrations: 'users/registrations'
   }
   get 'static_pages/landing_page'
   get 'static_pages/dashboard'
