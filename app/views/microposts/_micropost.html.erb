@@ -17,5 +17,19 @@
        <i class="fa-regular fa-trash-can"></i>
       <% end %>
       <% end %>
+
+    <div class="micropost_like">
+      <% pre_like = micropost.likes.find { |like| like.user_id == current_user.id } %>
+      <% if pre_like %>
+      <%= link_to micropost_like_path(micropost, pre_like), data: { turbo_method: :delete } do %>
+            <i class="fa-solid fa-heart-crack fa-xl" style="color:red"></i>
+        <% end %>
+      <% else %>
+     <%= link_to micropost_likes_path(micropost), data: { turbo_method: :post } do %>
+           <i class="fa-solid fa-heart fa-xl" style="color:red"></i>
+        <% end %>
+      <% end %>
+      <p><%= micropost.likes.count %></p>
+    </div>
     </span>
 </li>
